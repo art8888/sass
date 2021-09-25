@@ -1,0 +1,72 @@
+@import "style";
+
+// This is comment
+$body-color: #4b4b4b;
+$nav-color: #7158e2;
+$text-color: #fff;
+$button-bgcolor: #FF0;
+
+
+body{
+    background: $body-color;
+}
+nav{
+    background: $nav-color;
+}
+.text{
+    color: $text-color;
+}
+
+nav {
+    ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+
+//mixin
+@mixin important-text {
+    color: #F00;
+    font-size: 25px;
+    font-weight: bold;
+    border: 0;
+}
+
+@mixin no-decoration { text-decoration: none; }
+
+p {
+    @include important-text();
+}
+
+//inheritance (u share a set of CSS properties from one selector to another)
+.button-basic {
+    background: $button-bgcolor;
+    border:none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-report {
+    @extend .button-basic;
+    background-color: #F00;
+}
+
+.button-submit {
+    @extend .button-basic;
+    background-color: green;
+    color: #FFF;
+    @include no-decoration();
+}

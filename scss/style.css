@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #F00;
+}
+
+body {
+  background: #4b4b4b;
+}
+
+nav {
+  background: #7158e2;
+}
+
+.text {
+  color: #fff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+p {
+  color: #F00;
+  font-size: 25px;
+  font-weight: bold;
+  border: 0;
+}
+
+.button-basic, .button-report, .button-submit {
+  background: #FF0;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-report {
+  background-color: #F00;
+}
+
+.button-submit {
+  background-color: green;
+  color: #FFF;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
